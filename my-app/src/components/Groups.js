@@ -1,6 +1,6 @@
 import React from "react";
 
-const Groups = () => {
+const Groups = ({ teams }) => {
   return <div>Groups</div>;
 };
 
