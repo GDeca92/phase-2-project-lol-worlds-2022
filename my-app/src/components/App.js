@@ -13,8 +13,6 @@ function App() {
       .then((data) => setTeams(data));
   }, []);
 
-  console.log(teams);
-
   return (
     <div className="App">
       <NavBar />
