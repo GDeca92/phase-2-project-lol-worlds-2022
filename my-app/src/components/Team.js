@@ -1,20 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Team = ({ team }) => {
+  const [isFront, setIsFront] = useState(true);
+
   return (
-    <div>
+    <div onClick={() => setIsFront((isFront) => !isFront)}>
       <h1>{team.name}</h1>
-      <img src={team.image} alt={team.name} />
       <h3>{team.region}</h3>
       <p>Group: {team["group stage"]}</p>
-      <ul>
-        Roster
-        <li>Top: {team.Top}</li>
-        <li>Jungle: {team.Jungle}</li>
-        <li>Mid: {team.Mid}</li>
-        <li>ADC: {team.ADC}</li>
-        <li>Support: {team.Support}</li>
-      </ul>
+      {isFront ? (
+        <img src={team.image} alt={team.name} />
+      ) : (
+        <ul>
+          <h3>Roster</h3>
+          <li>Top: {team.Top}</li>
+          <li>Jungle: {team.Jungle}</li>
+          <li>Mid: {team.Mid}</li>
+          <li>ADC: {team.ADC}</li>
+          <li>Support: {team.Support}</li>
+        </ul>
+      )}
     </div>
   );
 };

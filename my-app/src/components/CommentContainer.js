@@ -1,5 +1,5 @@
 import React from "react";
-import Comment from "./Comment";
+
 
 const CommentContainer = ({commentsList}) => {
   const commentComponent = commentsList.map((comment) => (
@@ -15,6 +15,7 @@ const CommentContainer = ({commentsList}) => {
       {commentComponent}
     </div>
   );
+
 };
 
 export default CommentContainer;
