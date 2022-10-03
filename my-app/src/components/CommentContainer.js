@@ -1,12 +1,7 @@
 import React from "react";
-import Comment from "./Comment";
 
 const CommentContainer = () => {
-  return (
-    <div>
-      <Comment />
-    </div>
-  );
+  return <div>CommentContainer</div>;
 };
 
 export default CommentContainer;

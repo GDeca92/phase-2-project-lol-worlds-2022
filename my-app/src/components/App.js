@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import NavBar from "./NavBar";
 import HomePage from "./HomePage";
 import TeamsContainer from "./TeamsContainer";
-import Groups from "./Groups";
+import GroupsContainer from "./GroupsContainer";
 
 function App() {
   const [teams, setTeams] = useState([]);
@@ -20,7 +20,7 @@ function App() {
       <NavBar />
       <HomePage />
       <TeamsContainer teams={teams} />
-      <Groups teams={teams} />
+      <GroupsContainer teams={teams} />
     </div>
   );
 }
