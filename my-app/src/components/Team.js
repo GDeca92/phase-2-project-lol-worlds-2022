@@ -10,7 +10,6 @@ const Team = ({ team }) => {
     >
       <h1 className="team_text">{team.name}</h1>
       <h3 className="team_text">Region: {team.region}</h3>
-      <p className="team_text">Group: {team["group stage"]}</p>
       {isFront ? (
         <img
           className="teamLogo card__face card__face--front"

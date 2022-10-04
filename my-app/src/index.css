@@ -12,6 +12,13 @@ code {
     monospace;
 }
 
+.App {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
 
 .team_text {
   text-align: center;
@@ -32,7 +39,7 @@ code {
 }
 
 .teamCard {
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .teamCard img {
@@ -42,6 +49,65 @@ code {
 
 .teamCard:hover {
   transform: scale(1.02);
+}
+
+.groupPlayers {
+  height: 80%;
+}
+
+.playersContainer {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+}
+
+.teamLogoContainer {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  text-align: center;
+  height: 50%;
+}
+
+.players {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 0%;
+  text-align: center;
+  height: 50%;
+  font-size: 30px;
+}
+
+.groupContainer {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  background-image: url("https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc28d43095579c8b5/5d87c24e8d8a3163705e3070/summonersrift.jpg");
+  color: #ffffff;
+}
+
+.groupCard {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  text-align: center;
+  height: 50%;
+  border-style: ridge;
+}
+
+.groupTitle {
+  font-size: 50px;
+  font-weight: bold;
+  color: crimson;
+  text-decoration: underline;
+}
+
+.groupTeamIcon {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  display: block;
 }
 
 nav {

@@ -8,6 +8,7 @@ const CommentContainer = ({ commentsList }) => {
       username={comment.username}
       comments={comment.comments}
     />
+  ));
 
   ))
 

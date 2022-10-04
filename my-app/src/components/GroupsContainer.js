@@ -8,18 +8,23 @@ const Groups = ({ teams }) => {
   const groupD = teams.filter((group) => group["group stage"] === "D");
 
   return (
-    <div>
-      <h1>Group A : </h1>
-      <Group group={groupA} />
-
-      <h1>Group B : </h1>
-      <Group group={groupB} />
-
-      <h1>Group C : </h1>
-      <Group group={groupC} />
-
-      <h1>Group D : </h1>
-      <Group group={groupD} />
+    <div className="groupContainer">
+      <div className="groupCard">
+        <h1 className="groupTitle">Group A</h1>
+        <Group group={groupA} />
+      </div>
+      <div className="groupCard">
+        <h1 className="groupTitle">Group B </h1>
+        <Group group={groupB} />
+      </div>
+      <div className="groupCard">
+        <h1 className="groupTitle">Group C</h1>
+        <Group group={groupC} />
+      </div>
+      <div className="groupCard">
+        <h1 className="groupTitle">Group D</h1>
+        <Group group={groupD} />
+      </div>
     </div>
   );
 };
