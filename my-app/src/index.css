@@ -1,16 +1,47 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+.team_text {
+  text-align: center;
+}
+
+.teamLogo {
+  height: 40vmin;
+  max-width: 100%;
+  width: autoSuccess;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  pointer-events: none;
+}
+
+.teamContainer {
+  padding: 40vmin;
+}
+
+.teamCard {
+  justify-content: space-evenly;
+}
+
+.teamCard img {
+  max-width: 50%;
+  max-height: 40%;
+}
+
+.teamCard:hover {
+  transform: scale(1.05);
 
 nav {
   background-color: #1b1b1b;
@@ -30,4 +61,5 @@ nav a:hover,
 nav a:active {
   color: antiquewhite;
   border-bottom: 2px solid antiquewhite;
+
 }
