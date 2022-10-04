@@ -20,8 +20,10 @@ function Homepage (){
   return (
     <>
       <div id="homepage">
-        <div className="comments">
-          <h1>About</h1>
+        <img src="https://images.contentstack.io/v3/assets/bltad9188aa9a70543a/bltee0947ea235d63dd/632140fd5a8acf5d92ccd8e0/W22_TEMPLATE_16x9_KV_GENERIC_PLAYINS.png?width=700&height=350" />
+        <div className="about-section">
+          <h1>What is Worlds Championship?</h1>
+          <p>The League of Legends World Championship (also known as Worlds) is the premier yearly international tournament that brings together the top teams to compete for the Summoner’s Cup and earn the title of World Champion. More than 800 players on 100+ professional League of Legends esports teams compete across a dozen leagues globally throughout the year to qualify for the tournament. The event moves between host regions each year; this year, four cities across North America will play host to the various tournament stages.</p>
         </div>
       <CommentContainer commentsList={commentsList} newComment={newComment} setNewComment={setNewComment}/>
       <CommentForm handleAddComment={handleAddComment}/>
