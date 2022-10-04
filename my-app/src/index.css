@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav {
+  background-color: #1b1b1b;
+}
+
+nav a {
+  display: inline-block;
+  margin: 1.6rem 1.5rem;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5em;
+  font-style: oblique;
+  font-variant: small-caps;
+}
+
+nav a:hover,
+nav a:active {
+  color: antiquewhite;
+  border-bottom: 2px solid antiquewhite;
+}
