@@ -19,7 +19,7 @@ function Homepage (){
 
   return (
     <>
-      <div>
+      <div id="homepage">
         <div className="comments">
           <h1>About</h1>
         </div>

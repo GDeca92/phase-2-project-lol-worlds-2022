@@ -12,12 +12,10 @@ const CommentContainer = ({ commentsList }) => {
   ))
 
   return (
-    <div id="comment_display">
+    <div className="comment-display">
       {commentComponent}
     </div>
   );
-
-  return <div>{commentComponent}</div>;
 };
 
 export default CommentContainer;
