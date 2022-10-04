@@ -48,7 +48,7 @@ code {
 }
 
 .teamCard:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .groupPlayers {
@@ -127,4 +127,47 @@ nav a {
 nav a:hover,
 nav a:active {
   color: antiquewhite;
+}
+
+#homepage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+}
+
+button {
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.75em;
+  display: inline-block;
+  text-decoration: none;
+}
+
+textarea, input {
+  border: none;
+  border-bottom: 1px solid darkgray;
+  font-size: 0.85rem;
+  padding: 0.25rem 0;
+  width: 99%;
+}
+
+.new-comment-form {
+  max-width: 30rem;
+  color: #fff;
+  background-color: #050f38;
+  border-radius: 0.875rem;
+  padding: 1rem 1rem .5rem;
+}
+
+.comment-display {
+  max-width: 30rem;
+  color: #fff;
+  background-color: #050f38;
+  border-radius: 0.875rem;
+  padding: 1rem 1rem 1rem;
 }

@@ -3,6 +3,13 @@ import React, { useState } from "react";
 const CommentForm = ({ handleAddComment }) => {
   const [name, setName] = useState("");
   const [post, setPost] = useState("");
+  
+  const enableCommentButton = () => {
+    return (post && name ? false : true)
+  }
+  const changeCommentButton = () => {
+    return (post && name ? "comments-button-enabled" : "comments-button-disabled")
+  } 
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -21,21 +28,23 @@ const CommentForm = ({ handleAddComment }) => {
 
   return (
     <div className="new-comment-form">
-      <h2>New Comment</h2>
       <form onSubmit={handleSubmit}>
-        <input
-          value={name}
-          type="text"
-          placeholder="Username"
-          onChange={(e) => setName(e.target.value)}
-        />
-        <input
-          value={post}
-          type="text"
-          placeholder="Comment"
-          onChange={(e) => setPost(e.target.value)}
-        />
-        <button type="submit">Post</button>
+        <div className="new-comment-field">
+          <input
+            value={name}
+            type="text"
+            placeholder="Display username"
+            onChange={(e) => setName(e.target.value)}
+          />
+          <textarea
+            value={post}
+            type="text"
+            placeholder="Add a comment..."
+            onChange={(e) => setPost(e.target.value)}
+            rows="4"
+          />
+        <button id={changeCommentButton()} disabled={enableCommentButton()} type="submit">Post Comment</button>
+        </div>
       </form>
     </div>
   );

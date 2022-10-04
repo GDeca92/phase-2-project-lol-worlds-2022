@@ -10,7 +10,13 @@ const CommentContainer = ({ commentsList }) => {
     />
   ));
 
-  return <div id="comment_display">{commentComponent}</div>;
+  ))
+
+  return (
+    <div className="comment-display">
+      {commentComponent}
+    </div>
+  );
 };
 
 export default CommentContainer;
