@@ -8,7 +8,14 @@ const CommentContainer = ({ commentsList }) => {
       username={comment.username}
       comments={comment.comments}
     />
-  ));
+
+  ))
+
+  return (
+    <div id="comment_display">
+      {commentComponent}
+    </div>
+  );
 
   return <div>{commentComponent}</div>;
 };
