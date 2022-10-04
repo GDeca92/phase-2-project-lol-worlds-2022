@@ -10,8 +10,6 @@ const CommentContainer = ({ commentsList }) => {
     />
   ));
 
-  ))
-
   return (
     <div className="comment-display">
       {commentComponent}

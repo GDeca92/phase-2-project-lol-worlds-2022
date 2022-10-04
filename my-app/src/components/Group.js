@@ -2,8 +2,8 @@ import React from "react";
 
 const Group = ({ group }) => {
   const groupNames = group.map((groupTeam) => (
-    <div className="teamLogoContainer">
-      <p className="players" key={groupTeam.id}>
+    <div className="teamLogoContainer" key={groupTeam.id}>
+      <p className="players">
         {groupTeam.name}
       </p>
       <img

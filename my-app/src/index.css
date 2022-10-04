@@ -132,10 +132,28 @@ nav a:active {
 #homepage {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   text-align: center;
   padding: 1rem;
+  height: 93.4%;
+  background-image: url("https://wallpaper.dog/large/10921234.jpg");
+  background-repeat: repeat;
+
+}
+
+.about-section{
+  color: white;
+  width: 50rem;
+  text-align: left;
+  padding: 1.3rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+.team-page {
+  background-color: #2a2929;
 }
 
 button {
@@ -154,20 +172,28 @@ textarea, input {
   font-size: 0.85rem;
   padding: 0.25rem 0;
   width: 99%;
+  background-color: whitesmoke;
 }
 
 .new-comment-form {
-  max-width: 30rem;
+  width: 30rem;
   color: #fff;
-  background-color: #050f38;
+  background-color: #242c4d;
   border-radius: 0.875rem;
   padding: 1rem 1rem .5rem;
 }
 
 .comment-display {
-  max-width: 30rem;
+  width: 30rem;
   color: #fff;
-  background-color: #050f38;
+  background-color: #242c4d;
   border-radius: 0.875rem;
   padding: 1rem 1rem 1rem;
+  overflow-wrap: break-word
+}
+
+.display-post {
+  padding: .2rem;
+  border: none;
+  border-bottom: 2px black solid;
 }
