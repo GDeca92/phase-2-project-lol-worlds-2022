@@ -11,7 +11,7 @@ const CommentContainer = ({commentsList}) => {
   ))
 
   return (
-    <div>
+    <div id="comment_display">
       {commentComponent}
     </div>
   );
