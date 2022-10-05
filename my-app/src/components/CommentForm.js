@@ -7,9 +7,6 @@ const CommentForm = ({ handleAddComment }) => {
   const enableCommentButton = () => {
     return (post && name ? false : true)
   }
-  const changeCommentButton = () => {
-    return (post && name ? "comments-button-enabled" : "comments-button-disabled")
-  } 
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -43,7 +40,7 @@ const CommentForm = ({ handleAddComment }) => {
             onChange={(e) => setPost(e.target.value)}
             rows="4"
           />
-        <button id={changeCommentButton()} disabled={enableCommentButton()} type="submit">Post Comment</button>
+        <button disabled={enableCommentButton()} type="submit">Post Comment</button>
         </div>
       </form>
     </div>

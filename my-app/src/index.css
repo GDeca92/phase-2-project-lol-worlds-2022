@@ -22,24 +22,22 @@ code {
 
 .team_text {
   text-align: center;
+  border: none;
+  color: whitesmoke
 }
 
 .teamLogo {
-  height: 40vmin;
+  height: 30rem;
   max-width: 100%;
   width: autoSuccess;
   margin-left: auto;
   margin-right: auto;
   display: block;
-  pointer-events: none;
 }
 
 .teamContainer {
   padding: 40vmin;
-}
-
-.teamCard {
-  justify-content: space-between;
+  background-color: #2b2b3b;
 }
 
 .teamCard img {
@@ -48,8 +46,13 @@ code {
 }
 
 .teamCard:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
+
+.teamCard {
+  max-height: 40rem;
+}
+
 
 .groupPlayers {
   height: 80%;
@@ -59,7 +62,6 @@ code {
   height: 100%;
   display: flex;
   flex-flow: row wrap;
-  height: 100%;
 }
 
 .teamLogoContainer {
@@ -136,11 +138,8 @@ nav a:active {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 1rem;
-  height: 93.4%;
+  padding: .5rem;
   background-image: url("https://wallpaper.dog/large/10921234.jpg");
-  background-repeat: repeat;
-
 }
 
 .about-section{
@@ -158,6 +157,13 @@ h1 {
   background-color: #2a2929;
 }
 
+#comment-question {
+  color: whitesmoke;
+  font-size: x-large;
+  font-weight: bold;
+  font-style: italic;
+}
+
 button {
   border: none;
   border-radius: 0.25rem;
@@ -172,7 +178,7 @@ textarea, input {
   border: none;
   border-bottom: 1px solid darkgray;
   font-size: 0.85rem;
-  padding: 0.25rem 0;
+  padding: 0.25rem;
   width: 99%;
   background-color: whitesmoke;
 }
@@ -180,7 +186,7 @@ textarea, input {
 .new-comment-form {
   width: 30rem;
   color: #fff;
-  background-color: #242c4d;
+  background-color: #2b2b3b;
   border-radius: 0.875rem;
   padding: 1rem 1rem .5rem;
 }
@@ -188,7 +194,7 @@ textarea, input {
 .comment-display {
   width: 30rem;
   color: #fff;
-  background-color: #242c4d;
+  background-color: #2b2b3b;
   border-radius: 0.875rem;
   padding: 1rem 1rem 1rem;
   overflow-wrap: break-word

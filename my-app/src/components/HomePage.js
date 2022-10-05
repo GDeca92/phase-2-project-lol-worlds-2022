@@ -25,6 +25,9 @@ function Homepage (){
           <h1>What is Worlds Championship?</h1>
           <p>The League of Legends World Championship (also known as Worlds) is the premier yearly international tournament that brings together the top teams to compete for the Summoner’s Cup and earn the title of World Champion. More than 800 players on 100+ professional League of Legends esports teams compete across a dozen leagues globally throughout the year to qualify for the tournament. The event moves between host regions each year; this year, four cities across North America will play host to the various tournament stages.</p>
         </div>
+        <div id="comment-question">
+          <p>Who do you want to win Worlds?</p>
+        </div>
       <CommentContainer commentsList={commentsList} newComment={newComment} setNewComment={setNewComment}/>
       <CommentForm handleAddComment={handleAddComment}/>
       </div>
