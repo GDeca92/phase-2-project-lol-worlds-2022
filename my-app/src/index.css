@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #2b2b3b;
 }
 
 code {
@@ -14,7 +15,7 @@ code {
 
 .App {
   height: 100%;
-  background-color:#2b2b3b;
+  background-color: #2b2b3b;
 }
 
 #root {
@@ -24,7 +25,7 @@ code {
 .team_text {
   text-align: center;
   border: none;
-  color: whitesmoke
+  color: whitesmoke;
 }
 
 .teamLogo {
@@ -37,13 +38,16 @@ code {
 }
 
 .teamContainer {
-  padding: 40vmin;
   background-color: #2b2b3b;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .teamCard img {
-  max-width: 50%;
-  max-height: 40%;
+  max-width: 200px;
+  max-height: 200px;
 }
 
 .teamCard:hover {
@@ -51,7 +55,14 @@ code {
 }
 
 .teamCard {
-  max-height: 40rem;
+  max-height: 25rem;
+  min-height: 25rem;
+  max-width: 20%;
+  min-width: 20%;
+  justify-content: space-between;
+  margin: 20px;
+  box-sizing: border-box;
+  border: solid #e2e3e9 10px;
 }
 
 .groupPlayers {
@@ -88,6 +99,8 @@ code {
   height: 100%;
   background-image: url("https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc28d43095579c8b5/5d87c24e8d8a3163705e3070/summonersrift.jpg");
   color: #ffffff;
+  justify-content: center;
+  align-items: center;
 }
 
 .groupCard {
@@ -97,6 +110,8 @@ code {
   text-align: center;
   height: 50%;
   border-style: ridge;
+  max-width: 49%;
+  padding-bottom: 40px;
 }
 
 .groupTitle {
@@ -138,7 +153,7 @@ nav a:active {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: .5rem;
+  padding: 0.5rem;
   height: 100%;
   background-image: url("https://wallpaper.dog/large/10921234.jpg");
   background-repeat: repeat;
@@ -209,15 +224,19 @@ input {
   border-bottom: 2px black solid;
 }
 
+.teamFilter {
+  background-color: #2b2b3b;
+}
+
 .selectRegion {
   padding: 8px 12px;
   color: #1d0f55;
-  background-color: #d5d6e0;
+  background-color: #f7f8fc;
   border-color: #341196;
-  border: 3px solid #420a68;
+  border: 1px solid #edebee;
   cursor: pointer;
   border-radius: 5px;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   margin-left: 1rem;
 }
 

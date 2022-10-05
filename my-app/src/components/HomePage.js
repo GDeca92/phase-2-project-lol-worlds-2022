@@ -19,7 +19,10 @@ function Homepage() {
   return (
     <>
       <div id="homepage">
-        <img src="https://images.contentstack.io/v3/assets/bltad9188aa9a70543a/bltee0947ea235d63dd/632140fd5a8acf5d92ccd8e0/W22_TEMPLATE_16x9_KV_GENERIC_PLAYINS.png?width=700&height=350" />
+        <img
+          src="https://images.contentstack.io/v3/assets/bltad9188aa9a70543a/bltee0947ea235d63dd/632140fd5a8acf5d92ccd8e0/W22_TEMPLATE_16x9_KV_GENERIC_PLAYINS.png?width=700&height=350"
+          alt="homepage"
+        />
         <div className="about-section">
           <h1>What is Worlds Championship?</h1>
           <p>
