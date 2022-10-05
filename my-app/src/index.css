@@ -137,13 +137,12 @@ nav a:active {
   flex-direction: column;
   text-align: center;
   padding: 1rem;
-  height: 93.4%;
+  height: 100%;
   background-image: url("https://wallpaper.dog/large/10921234.jpg");
   background-repeat: repeat;
-
 }
 
-.about-section{
+.about-section {
   color: white;
   width: 50rem;
   text-align: left;
@@ -168,7 +167,8 @@ button {
   text-decoration: none;
 }
 
-textarea, input {
+textarea,
+input {
   border: none;
   border-bottom: 1px solid darkgray;
   font-size: 0.85rem;
@@ -182,7 +182,7 @@ textarea, input {
   color: #fff;
   background-color: #242c4d;
   border-radius: 0.875rem;
-  padding: 1rem 1rem .5rem;
+  padding: 1rem 1rem 0.5rem;
 }
 
 .comment-display {
@@ -191,11 +191,27 @@ textarea, input {
   background-color: #242c4d;
   border-radius: 0.875rem;
   padding: 1rem 1rem 1rem;
-  overflow-wrap: break-word
+  overflow-wrap: break-word;
 }
 
 .display-post {
-  padding: .2rem;
+  padding: 0.2rem;
   border: none;
   border-bottom: 2px black solid;
+}
+
+.selectRegion {
+  padding: 8px 12px;
+  color: #1d0f55;
+  background-color: #d5d6e0;
+  border-color: #341196;
+  border: 3px solid #420a68;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.select:focus,
+.select:hover {
+  outline: none;
+  border: 1px solid #131ebd;
 }
