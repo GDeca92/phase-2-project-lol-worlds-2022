@@ -14,6 +14,7 @@ code {
 
 .App {
   height: 100%;
+  background-color:#2b2b3b;
 }
 
 #root {
@@ -52,7 +53,6 @@ code {
 .teamCard {
   max-height: 40rem;
 }
-
 
 .groupPlayers {
   height: 80%;
@@ -139,7 +139,9 @@ nav a:active {
   flex-direction: column;
   text-align: center;
   padding: .5rem;
+  height: 100%;
   background-image: url("https://wallpaper.dog/large/10921234.jpg");
+  background-repeat: repeat;
 }
 
 .about-section {
@@ -215,6 +217,8 @@ input {
   border: 3px solid #420a68;
   cursor: pointer;
   border-radius: 5px;
+  margin-top: .5rem;
+  margin-left: 1rem;
 }
 
 .select:focus,
