@@ -10,10 +10,8 @@ const TeamsContainer = ({ teams }) => {
     })
     .map((team) => <Team key={team.id} team={team} />);
 
-  console.log(region);
-
   return (
-    <div>
+    <div className="teamFilter">
       <select
         className="selectRegion"
         onChange={(e) => setRegion(e.target.value)}
