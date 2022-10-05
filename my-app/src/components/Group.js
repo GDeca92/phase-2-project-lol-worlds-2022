@@ -14,7 +14,6 @@ const Group = ({ group }) => {
   return (
     <div className="groupPlayers">
       <div className="playersContainer">{groupNames}</div>
-      <br />
     </div>
   );
 };

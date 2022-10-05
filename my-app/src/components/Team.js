@@ -19,11 +19,13 @@ const Team = ({ team }) => {
       ) : (
         <div className="team_text card__face card__face--back">
           <h1>Roster</h1>
+          <strong>
           <p>Top: {team.Top}</p>
           <p>Jungle: {team.Jungle}</p>
           <p>Mid: {team.Mid}</p>
           <p>ADC: {team.ADC}</p>
           <p>Support: {team.Support}</p>
+          </strong>
         </div>
       )}
     </div>

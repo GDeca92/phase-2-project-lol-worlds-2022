@@ -33,6 +33,9 @@ function Homepage() {
             America will play host to the various tournament stages.
           </p>
         </div>
+        <div id="comment-question">
+          <p>Who do you want to win Worlds?</p>
+        </div>
         <CommentContainer
           commentsList={commentsList}
           newComment={newComment}
