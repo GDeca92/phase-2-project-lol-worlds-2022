@@ -16,6 +16,9 @@ const TeamsContainer = ({ teams }) => {
         className="selectRegion"
         onChange={(e) => setRegion(e.target.value)}
       >
+        <option value="" disabled selected>
+          Filter by Region
+        </option>
         <option value="All">All</option>
         <option value="LCS">LCS</option>
         <option value="LEC">LEC</option>
@@ -26,7 +29,7 @@ const TeamsContainer = ({ teams }) => {
       </select>
       <br />
       <br />
-      <div className="ui grid cards teamContainer">{teamComponent}</div>;
+      <div className="teamContainer">{teamComponent}</div>;
     </div>
   );
 };
