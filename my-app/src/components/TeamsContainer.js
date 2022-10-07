@@ -16,7 +16,7 @@ const TeamsContainer = ({ teams }) => {
         className="selectRegion"
         onChange={(e) => setRegion(e.target.value)}
       >
-        <option value="" disabled selected>
+        <option value="" disabled>
           Filter by Region
         </option>
         <option value="All">All</option>
