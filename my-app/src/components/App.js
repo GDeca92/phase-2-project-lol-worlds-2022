@@ -19,10 +19,10 @@ function App() {
       <NavBar/>
       <Switch>
         <Route path="/teams">
-          <TeamsContainer teams={teams} />
+          <TeamsContainer exact teams={teams} />
         </Route>
         <Route path="/groups">
-          <GroupsContainer teams={teams} />
+          <GroupsContainer exact teams={teams} />
         </Route>
         <Route exact path="/">
           <HomePage />
